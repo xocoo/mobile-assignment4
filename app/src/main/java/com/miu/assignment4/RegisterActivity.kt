@@ -29,8 +29,7 @@ class RegisterActivity : AppCompatActivity() {
         Toast.makeText(this, "Your account created", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, MainActivity::class.java)
         intent.putExtra("userNew", userNew)
-        startActivity(intent)
-
+        setResult(RESULT_OK, intent)
+        finish()
     }
-
 }

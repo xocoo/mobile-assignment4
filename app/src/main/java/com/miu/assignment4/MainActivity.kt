@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         users.add(user4)
         users.add(user5)
 
+
         var resultContracts =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 if (result.resultCode == Activity.RESULT_OK) {
