@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Assignment 4</string>
+    <string name="logo_description">Walmart Logo</string>
+    <string name="sign_in">Sign in to your account</string>
+    <string name="email_required">Email address (required)</string>
+    <string name="password_required">Password (required)</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in_btn">Sign in</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="create_account">Create new account</string>
+    <string name="shop_title">Shop by Categories</string>
+    <string name="welcome">Welcome</string>
+    <string name="user">Guest</string>
+    <string name="electronics">Electronics</string>
+    <string name="clothing">Clothing</string>
+    <string name="beauty">Beauty</string>
+    <string name="food">Food</string>
+    <string name="create_new_account">Create your account</string>
 </resources>

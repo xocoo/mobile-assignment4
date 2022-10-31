@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCategory">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="230dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/walmart" />
+
+    <TextView
+        android:id="@+id/tv_shop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="@string/shop_title"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toEndOf="@+id/tv_welcome"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_title" />
+
+    <ImageView
+        android:id="@+id/img_electronics"
+        android:layout_width="163dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:onClick="ClickEvent"
+        app:layout_constraintEnd_toStartOf="@+id/img_clothing"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+        app:srcCompat="@drawable/electronics" />
+
+    <TextView
+        android:id="@+id/tv_electronics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/electronics"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_electronics" />
+
+    <ImageView
+        android:id="@+id/img_clothing"
+        android:layout_width="166dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="ClickEvent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clothing" />
+
+    <TextView
+        android:id="@+id/tv_clothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/clothing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toEndOf="@+id/tv_electronics"
+        app:layout_constraintTop_toBottomOf="@+id/img_clothing" />
+
+    <ImageView
+        android:id="@+id/img_beauty"
+        android:layout_width="161dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:onClick="ClickEvent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_electronics"
+        app:srcCompat="@drawable/beauty" />
+
+    <TextView
+        android:id="@+id/tv_beauty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/beauty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_beauty" />
+
+    <ImageView
+        android:id="@+id/img_food"
+        android:layout_width="187dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="60dp"
+        android:onClick="ClickEvent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@+id/img_beauty"
+        app:layout_constraintTop_toBottomOf="@+id/tv_clothing"
+        app:srcCompat="@drawable/food" />
+
+    <TextView
+        android:id="@+id/tv_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toEndOf="@+id/tv_beauty"
+        app:layout_constraintTop_toBottomOf="@+id/img_food" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
